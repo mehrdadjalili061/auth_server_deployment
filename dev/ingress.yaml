@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: auth-api-service-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    traefik.ingress.kubernetes.io/router.entrypoints: web
 spec:
   rules:
   - host: auth-api-server.app.fcgm.dev
@@ -15,4 +15,4 @@ spec:
           service:
             name: auth-api-service
             port:
-              number: 80
+              number: 31501
