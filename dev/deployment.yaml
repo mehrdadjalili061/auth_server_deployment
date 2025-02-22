@@ -18,7 +18,7 @@ spec:
         - name: facegram-registery
       containers:
         - name: auth-api-server
-          image: cr.fcgm.dev/facegram/auth-service:22b9b55e
+          image: cr.fcgm.dev/facegram/auth-service:810d2b4d
           ports:
             - containerPort: 8080
             - containerPort: 30004
