@@ -6,23 +6,28 @@ spec:
   selector:
     app: auth-api-server
   ports:
-    - protocol: TCP
+    - name: http-api
+      protocol: TCP
       port: 31501
       targetPort: 8080
       nodePort: 31501
-    - protocol: TCP
+    - name: grpc-client-port
+      protocol: TCP
       port: 30004
       targetPort: 30004
       nodePort: 30004
-    - protocol: TCP
+    - name: grpc-manager-port
+      protocol: TCP
       port: 30005
       targetPort: 30005
       nodePort: 30005
-    - protocol: TCP
+    - name: grpc-page-port
+      protocol: TCP
       port: 30006
       targetPort: 30006
       nodePort: 30006
-    - protocol: TCP
+    - name: grpc-developer-port
+      protocol: TCP
       port: 30007
       targetPort: 30007
       nodePort: 30007        
