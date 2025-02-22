@@ -8,7 +8,7 @@ spec:
   ports:
     - name: http-api
       protocol: TCP
-      port: 31501
+      port: 80
       targetPort: 8080
       nodePort: 31501
     - name: grpc-client-port

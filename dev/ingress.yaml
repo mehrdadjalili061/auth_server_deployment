@@ -15,4 +15,4 @@ spec:
           service:
             name: auth-api-service
             port:
-              number: 31501
+              number: 80
